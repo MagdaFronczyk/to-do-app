@@ -2,6 +2,9 @@ import React, {Component} from 'react';
 import Note from './Note/Note'
 import NoteForm from './NoteForm/NoteForm'
 import './App.css';
+import {DB_CONFIG} from "./Config/config";
+import firebase from 'firebase/app';
+import 'firebase/database'
 
 class App extends Component {
 
@@ -9,22 +12,50 @@ class App extends Component {
         super(props);
 
         this.addNote = this.addNote.bind(this); //przyklejamy this aby wskazywał na komponent App
+        this.removeNote = this.removeNote.bind(this);
+        this.app = firebase.initializeApp(DB_CONFIG);
+        this.database = this.app.database().ref().child('notes');
 
         this.state = { //notatki przechowujemy w stacie, będą się zmieniać
-            notes: [ //tablica z notatkami z odpowiednimi parami klucz i wartość
-                {id: 1, noteContent: "note 1 here!"},
-                {id: 2, noteContent: "note 2 here!"}
-            ],
+            notes: [],
         }
     }
 
-    addNote(note) {
+    componentWillMount() {
+        const previousNotes = this.state.notes;
 
-        const previousNotes = this.state.notes; //pobieramy obecny stan notatek
-        previousNotes.push({id: previousNotes.length+1, noteContent:note}); //dodajemy kolejną notatkę i id
-        this.setState({
-            notes: previousNotes //podstawiamy uaktualniony zbior notatek
-        })
+        this.database.on('child_added', snap => {
+            previousNotes.push({
+                id: snap.key,
+                noteContent: snap.val().noteContent,
+            });
+
+            this.setState({
+                notes: previousNotes
+            });
+
+        });
+
+        this.database.on('child_removed', snap => {
+            for (let i = 0; i < previousNotes.length; i++) {
+                if (previousNotes[i].id === snap.key) {
+                    previousNotes.splice(i, 1);
+                }
+            }
+
+            this.setState({
+                notes: previousNotes
+            });
+
+        });
+    }
+
+    addNote(note) {
+        this.database.push().set({noteContent: note});
+    }
+
+    removeNote(noteId) {
+        this.database.child(noteId).remove();
     }
 
     render() {
@@ -37,7 +68,10 @@ class App extends Component {
                     {
                         this.state.notes.map((note) => { //mapujemy tablicę ze state'ów aby wyświetlić Note na stronie, "note" to jeden obiekt z tablicy, po "." dostajemy się do zawartości
                             return (
-                                <Note noteContent={note.noteContent} noteId={note.id} key={note.id}/> //tworzymy komponenty Notes na podtawie głownej klasy,mają propsy, które pojawiają się w konstruktorze,przyjmują wartości ze statów
+                                <Note noteContent={note.noteContent}
+                                      noteId={note.id}
+                                      key={note.id}
+                                      removeNote={this.removeNote}/> //tworzymy komponenty Notes na podtawie głownej klasy,mają propsy, które pojawiają się w konstruktorze,przyjmują wartości ze statów
                             )
                         })
                     }
