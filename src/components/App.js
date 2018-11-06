@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Note from './Note'
 import NoteForm from './NoteForm'
-import "../scss/main.scss"
+import "../scss/_Main.scss"
 import {DB_CONFIG} from "../Config/config";
 import firebase from 'firebase/app';
 import 'firebase/database'

@@ -16,10 +16,10 @@ class Note extends Component {
     render() {
         return (
             <div className="body_note">
-                <span onClick={()=> this.handleRemoveNote(this.noteId)}>
+                <p className="note_content">{this.noteContent}</p>
+                <span className="note_button" onClick={()=> this.handleRemoveNote(this.noteId)}>
                     &times;
                 </span>
-                <p className="note_content">{this.noteContent}</p>
             </div>
         )
     }
