@@ -1,0 +1,24 @@
+.footer_form {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.form_input {
+  width: 200px;
+  height: 25px;
+  padding: 5px;
+  border: 3px solid #ccc;
+  transition: 0.5s;
+  &:focus {
+    border: 3px solid  #F6B352;
+  }
+}
+
+.form_button {
+  height: 25px;
+  padding: 5px;
+  border: none;
+  color: white;
+  background-color: #1F2124;
+}
