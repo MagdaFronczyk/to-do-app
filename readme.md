@@ -14,9 +14,9 @@
  A simple to-do list created in order to practice working with React.js and firebase.
 
 ## Screenshots
-![Example screenshot](./img/screenshot1.png)
-![Example screenshot](./img/screenshot2.png)
-![Example screenshot](./img/screenshot3.png)
+![Example screenshot](src/img/screenshot1.png)
+![Example screenshot](src/img/screenshot2.png)
+![Example screenshot](src/img/screenshot3.png)
 
 ## Technologies
 * JavaScript - ECMAScript 6
