@@ -22,4 +22,8 @@
   color: white;
   background-color: #1F2124;
   cursor: pointer;
+  transition: 1s;
+  &:hover {
+    background-color: #30A9DE;
+  }
 }
