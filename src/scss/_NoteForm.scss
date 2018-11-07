@@ -13,6 +13,12 @@
   &:focus {
     border: 3px solid  #F6B352;
   }
+  @media all and (min-width: 740px){
+    width: 400px;
+  }
+  @media all and (min-width: 980px) {
+    width: 500px;
+  }
 }
 
 .form_button {
