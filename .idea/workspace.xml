@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6ca4db2f-c0f5-45e0-8ed3-0fc4f96ab773" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_Main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_Main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_NoteForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_NoteForm.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_Notes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_Notes.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,6 +35,7 @@
           <entry key="js" value="4" />
           <entry key="json" value="1" />
           <entry key="jsx" value="2" />
+          <entry key="md" value="1" />
           <entry key="scss" value="9" />
         </counts>
       </usages-collector>
@@ -48,6 +46,7 @@
           <entry key="JSON" value="1" />
           <entry key="JSX Harmony" value="2" />
           <entry key="JavaScript" value="4" />
+          <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="SCSS" value="9" />
         </counts>
@@ -57,6 +56,7 @@
           <entry key="gitignore" value="19" />
           <entry key="js" value="2122" />
           <entry key="jsx" value="1267" />
+          <entry key="md" value="258" />
           <entry key="scss" value="1530" />
         </counts>
       </usages-collector>
@@ -64,6 +64,7 @@
         <counts>
           <entry key="JSX Harmony" value="1267" />
           <entry key="JavaScript" value="2122" />
+          <entry key="Markdown" value="258" />
           <entry key="PLAIN_TEXT" value="19" />
           <entry key="SCSS" value="1530" />
         </counts>
@@ -105,11 +106,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scss/_Notes.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+            <state relative-caret-position="120">
+              <caret line="27" selection-start-line="27" selection-end-line="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="270">
+                <caret line="36" column="25" lean-forward="true" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -190,6 +203,7 @@
         <option value="$PROJECT_DIR$/src/scss/_NoteForm.scss" />
         <option value="$PROJECT_DIR$/src/scss/_Main.scss" />
         <option value="$PROJECT_DIR$/src/scss/_Notes.scss" />
+        <option value="$PROJECT_DIR$/src/readme.md" />
       </list>
     </option>
   </component>
@@ -209,7 +223,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="850" />
     <option name="width" value="1070" />
     <option name="height" value="1040" />
@@ -237,12 +251,6 @@
               <item name="todo" type="b2602c69:ProjectViewProjectNode" />
               <item name="todo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="todo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="todo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="todo" type="b2602c69:ProjectViewProjectNode" />
@@ -298,18 +306,18 @@
       <workItem from="1541073861143" duration="1034000" />
       <workItem from="1541510993265" duration="1338000" />
       <workItem from="1541518758132" duration="14325000" />
-      <workItem from="1541584756236" duration="3599000" />
+      <workItem from="1541584756236" duration="5129000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36009000" />
+    <option name="totallyTimeSpent" value="37539000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21083939" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.21083939" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -323,7 +331,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.1858156" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.1858156" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -469,8 +477,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scss/_Notes.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+        <state relative-caret-position="120">
+          <caret line="27" selection-start-line="27" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="270">
+            <caret line="36" column="25" lean-forward="true" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
