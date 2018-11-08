@@ -10,25 +10,44 @@
   padding: 5px;
   border: 3px solid #ccc;
   transition: 0.5s;
+  font-family : inherit;
+  font-size: 15px;
   &:focus {
     border: 3px solid  #F6B352;
   }
   @media all and (min-width: 740px){
     width: 400px;
+    font-size: 20px;
+    height: 30px;
   }
   @media all and (min-width: 980px) {
     width: 500px;
+    font-size: 20px;
+    height: 35px;
   }
 }
 
 .form_button {
   height: 25px;
-  padding: 5px;
+  width: 80px;
   border: none;
   color: white;
   background-color: #1F2124;
   cursor: pointer;
   transition: 1s;
+  text-align: center;
+  padding: 0;
+  vertical-align: middle;
+  font-family : inherit;
+  font-size: 15px;
+  @media all and (min-width: 740px) {
+    font-size: 20px;
+    height: 35px;
+  }
+  @media all and (min-width: 980px) {
+    font-size: 20px;
+    height: 35px;
+  }
   &:hover {
     background-color: #30A9DE;
   }

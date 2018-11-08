@@ -3,6 +3,12 @@
   align-items: center;
   padding: 0 20px 10px 20px;
   font-size: 20px;
+  @media all and (min-width: 740px){
+    font-size: 25px;
+  }
+  @media all and (min-width: 980px) {
+    font-size: 25px;
+  }
 }
 
 .notes_body{
